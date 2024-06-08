@@ -15,6 +15,7 @@
 		CACC3B482C13E8C100ECE8C9 /* GradeCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC3B472C13E8C100ECE8C9 /* GradeCalculatorTests.swift */; };
 		CACC3B522C13E8C100ECE8C9 /* GradeCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC3B512C13E8C100ECE8C9 /* GradeCalculatorUITests.swift */; };
 		CACC3B542C13E8C100ECE8C9 /* GradeCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC3B532C13E8C100ECE8C9 /* GradeCalculatorUITestsLaunchTests.swift */; };
+		CACC3B612C13E8FB00ECE8C9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACC3B602C13E8FB00ECE8C9 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		CACC3B4D2C13E8C100ECE8C9 /* GradeCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradeCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACC3B512C13E8C100ECE8C9 /* GradeCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCalculatorUITests.swift; sourceTree = "<group>"; };
 		CACC3B532C13E8C100ECE8C9 /* GradeCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CACC3B602C13E8FB00ECE8C9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				CACC3B342C13E8BF00ECE8C9 /* GradeCalculatorApp.swift */,
 				CACC3B362C13E8BF00ECE8C9 /* ContentView.swift */,
+				CACC3B602C13E8FB00ECE8C9 /* MainView.swift */,
 				CACC3B382C13E8BF00ECE8C9 /* Item.swift */,
 				CACC3B3A2C13E8C000ECE8C9 /* Assets.xcassets */,
 				CACC3B3C2C13E8C000ECE8C9 /* Preview Content */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CACC3B372C13E8BF00ECE8C9 /* ContentView.swift in Sources */,
+				CACC3B612C13E8FB00ECE8C9 /* MainView.swift in Sources */,
 				CACC3B392C13E8BF00ECE8C9 /* Item.swift in Sources */,
 				CACC3B352C13E8BF00ECE8C9 /* GradeCalculatorApp.swift in Sources */,
 			);
