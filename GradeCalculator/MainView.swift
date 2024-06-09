@@ -4,7 +4,7 @@
 //
 //  Created by Conner Yoon on 6/7/24.
 //
-
+import SwiftData
 import SwiftUI
 @Observable
 class GradeCalculator {
@@ -27,6 +27,11 @@ class GradeCalculator {
     func addAssignment() {
         assignments.append(Assignment())
     }
+    func deleteItems(offsets: IndexSet) {
+        for index in offsets {
+            assignments.remove(at: index)
+        }
+    }
 }
 
 @Observable
@@ -43,17 +48,23 @@ class Assignment: Identifiable {
 }
 struct MainView: View {
     @State var vm = GradeCalculator()
+    
+    private func deleteItems(offsets: IndexSet) {
+        vm.deleteItems(offsets: offsets)
+    }
     var body: some View {
         NavigationStack{
             Form{
                 ForEach(vm.assignments){ assignment in
                     AssignmentRowView(assignment: assignment)
                         .listRowBackground(Color.green)
-                }
+                }.onDelete(perform: { indexSet in
+                    deleteItems(offsets: indexSet)
+                })
             }
             //.scrollContentBackground(.hidden)
               //  .background(.white)
-            .navigationTitle("Assignments: \(vm.averageGrade ?? 0.0, specifier: "%.1f")")
+            .navigationTitle("Average: \(vm.averageGrade ?? 0.0, specifier: "%.1f")")
                 .toolbar {
                     ToolbarItem {
                         Button(action: { 
